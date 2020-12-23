@@ -251,7 +251,7 @@
 @media screen and (max-width: 768px) {
   .card .top .buttons button {
     padding: 10px 0;
-    min-width: 114px;
+    min-width: 104px;
   }
 }
 .card .bottom {
@@ -311,4 +311,12 @@
 button {
   cursor: pointer;
   outline: none;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button, a {
+  font-family: Arial, Helvetica, sans-serif;
 }
