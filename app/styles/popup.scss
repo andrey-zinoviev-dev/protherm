@@ -134,6 +134,9 @@
                 font-weight: 700;
                 color: #0A0A0A;
                 margin-bottom: 8px;
+                @media screen and (max-width: 768px) {
+                  display: block;
+                }
                 h5, p {
                   margin: 0;
                   font-size: 12px;
@@ -151,7 +154,11 @@
                       margin-right: 10px;
                     }
                   }
+                  @media screen and (max-width: 768px) {
+                    justify-content: space-between;
+                  }
                 }
+
               }
               p {
                 margin: 0;
@@ -160,6 +167,7 @@
                 font-size: 13px;
                 line-height: 140%;
               }
+
             }
             &.opened {
               display: block;

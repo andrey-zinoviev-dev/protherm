@@ -164,6 +164,11 @@
   color: #0A0A0A;
   margin-bottom: 8px;
 }
+@media screen and (max-width: 768px) {
+  .card .top .content .wrapper .rates .reviews .review .review_header {
+    display: block;
+  }
+}
 .card .top .content .wrapper .rates .reviews .review .review_header h5, .card .top .content .wrapper .rates .reviews .review .review_header p {
   margin: 0;
   font-size: 12px;
@@ -181,6 +186,11 @@
 }
 .card .top .content .wrapper .rates .reviews .review .review_header .wrapper .score p {
   margin-right: 10px;
+}
+@media screen and (max-width: 768px) {
+  .card .top .content .wrapper .rates .reviews .review .review_header .wrapper {
+    justify-content: space-between;
+  }
 }
 .card .top .content .wrapper .rates .reviews .review p {
   margin: 0;
