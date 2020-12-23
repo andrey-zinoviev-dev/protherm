@@ -1,0 +1,66 @@
+doctype html
+html(lang="ru")
+  head
+    title Protherm
+    link(rel="stylesheet", href="./css/style.css")
+  body
+    .container
+      .card
+        .top
+          .content
+            img.profile(src="./pics/profile.svg", alt="")
+            .wrapper
+              p Константинопольский К.
+              .rates
+                .rating
+                  img(src="./pics/rate.svg", alt="")
+                  img(src="./pics/rate.svg", alt="")
+                  img(src="./pics/rate.svg", alt="")
+                  img(src="./pics/rate.svg", alt="")
+                  img(src="./pics/rate_unactive.svg", alt="")
+                  span 4.0
+                .likes
+                  img(src="./pics/like.svg", alt="")
+                  span 12
+                button.popup 6 отзывов
+                .reviews
+                  .review
+                    .review_header
+                      h5 Александр
+                      .wrapper
+                        .score
+                          p Рейтинг
+                          span 2.0
+                        span 10.11.2019
+                    p Было приятно поработать, все поставленные задачи были выполнены. Хорошая обратная связь. Если понадобится что-то снова сделать, обязательно обращусь к Николаю. Специалист своего дела, все на высоком уровне!
+                  .review
+                    .review_header
+                      h5 Александр
+                      .wrapper
+                        .score
+                          p Рейтинг
+                          span 2.0
+                        span 10.11.2019
+                    p Было приятно поработать, все поставленные задачи были выполнены. Хорошая обратная связь. Если понадобится что-то снова сделать, обязательно обращусь к Николаю. Специалист своего дела, все на высоком уровне!
+                .shape
+          .buttons
+            button Выбрать
+            button Профиль
+        .bottom
+          .wrapper
+            .category
+              img(src="./pics/location.svg", alt="")
+              button Области
+                span  6
+            .category.margin
+              img(src="./pics/cup.svg", alt="")
+              span > 5 лет на сайте
+          .wrapper
+            .category
+              img(src="./pics/city.svg", alt="")
+              button Города
+                span  16  
+            .category
+              img(src="./pics/doc.svg", alt="")
+              button Имеется сертификат
+    script(src="./js/main-dist.js")

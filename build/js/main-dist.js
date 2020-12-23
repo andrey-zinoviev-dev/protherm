@@ -1,0 +1,1 @@
+"use strict";const reviewButton=document.querySelector(".popup"),reviewsDiv=document.querySelector(".reviews"),arrow=document.querySelector(".shape");reviewButton.addEventListener("click",()=>{reviewsDiv.classList.toggle("opened"),arrow.classList.toggle("opened")});

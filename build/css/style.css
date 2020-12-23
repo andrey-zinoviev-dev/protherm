@@ -1,0 +1,304 @@
+.container {
+  max-width: 610px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 320px;
+  }
+}
+
+.card {
+  padding: 44px 72px 50px 54px;
+  box-sizing: border-box;
+  background: #FFFFFF;
+  border: 1px solid #A1A1A1;
+  box-shadow: 0px 20px 85px rgba(0, 0, 0, 0.2);
+}
+@media screen and (max-width: 768px) {
+  .card {
+    padding: 20px 20px 3px 20px;
+  }
+}
+.card .top {
+  padding-bottom: 26px;
+  border-bottom: 1px solid rgba(161, 161, 161, 0.3);
+  position: relative;
+}
+.card .top .content {
+  display: flex;
+  align-items: flex-start;
+}
+.card .top .content .profile {
+  margin-right: 25px;
+}
+@media screen and (max-width: 768px) {
+  .card .top .content .profile {
+    max-width: 64px;
+    margin: 0;
+  }
+}
+.card .top .content .wrapper {
+  width: 100%;
+}
+.card .top .content .wrapper p {
+  margin: 0 0 12px 0;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 24px;
+}
+@media screen and (max-width: 768px) {
+  .card .top .content .wrapper p {
+    font-size: 14px;
+    margin: 0 0 6px 0;
+  }
+}
+.card .top .content .wrapper .rates {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 25px;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .card .top .content .wrapper .rates {
+    display: block;
+  }
+}
+.card .top .content .wrapper .rates .rating {
+  min-width: 144px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 11px 4px 11px;
+  box-sizing: border-box;
+  background: #F1F2F2;
+  border-radius: 37px;
+}
+@media screen and (max-width: 768px) {
+  .card .top .content .wrapper .rates .rating {
+    max-width: 139px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .card .top .content .wrapper .rates .likes {
+    margin: 5px 0 7px 10px;
+  }
+}
+.card .top .content .wrapper .rates .likes img {
+  margin-right: 11px;
+}
+@media screen and (max-width: 768px) {
+  .card .top .content .wrapper .rates .likes img {
+    margin-right: 3px;
+    max-width: 13px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .card .top .content .wrapper .rates .likes span {
+    font-size: 12px;
+    font-weight: 700;
+  }
+}
+@media screen and (max-width: 768px) {
+  .card .top .content .wrapper .rates .popup {
+    font-size: 12px;
+    font-weight: 700;
+  }
+}
+.card .top .content .wrapper .rates button {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  border: 0;
+  padding: 0;
+  background: rgba(0, 0, 0, 0);
+  border-bottom: 1px dashed #00AFD7;
+}
+.card .top .content .wrapper .rates .reviews {
+  max-height: 219px;
+  min-width: 398px;
+  overflow: auto;
+  display: none;
+  padding: 23px 24px 18px 23px;
+  box-sizing: border-box;
+  position: absolute;
+  background: #FFFFFF;
+  border: 1px solid rgba(161, 161, 161, 0.2);
+  top: 46px;
+  left: -15%;
+}
+.card .top .content .wrapper .rates .reviews::-webkit-scrollbar {
+  width: 2px;
+  left: -100px;
+  scroll-padding-right: 11px;
+}
+.card .top .content .wrapper .rates .reviews::-webkit-scrollbar-track {
+  background: linear-gradient(0deg, #DFDFDF, #DFDFDF);
+  margin: 17px 0 18px 0;
+}
+.card .top .content .wrapper .rates .reviews::-webkit-scrollbar-thumb {
+  background: #9E9E9E;
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+@media screen and (max-width: 768px) {
+  .card .top .content .wrapper .rates .reviews {
+    min-width: 0;
+    max-width: 250px;
+    top: 117px;
+    left: -37%;
+  }
+}
+.card .top .content .wrapper .rates .reviews .review .review_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #0A0A0A;
+  margin-bottom: 8px;
+}
+.card .top .content .wrapper .rates .reviews .review .review_header h5, .card .top .content .wrapper .rates .reviews .review .review_header p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 700;
+}
+.card .top .content .wrapper .rates .reviews .review .review_header .wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.card .top .content .wrapper .rates .reviews .review .review_header .wrapper .score {
+  display: flex;
+  margin-right: 25px;
+}
+.card .top .content .wrapper .rates .reviews .review .review_header .wrapper .score p {
+  margin-right: 10px;
+}
+.card .top .content .wrapper .rates .reviews .review p {
+  margin: 0;
+  color: #70706F;
+  font-weight: 450;
+  font-size: 13px;
+  line-height: 140%;
+}
+.card .top .content .wrapper .rates .reviews.opened {
+  display: block;
+}
+.card .top .content .wrapper .rates .shape {
+  display: none;
+  width: 15px;
+  height: 15px;
+  background: transparent;
+  position: absolute;
+  top: 38px;
+  left: 260px;
+  background-color: white;
+  z-index: 2;
+  transform: rotate(45deg);
+  border-top: 1px solid rgba(161, 161, 161, 0.2);
+  border-left: 1px solid rgba(161, 161, 161, 0.2);
+}
+.card .top .content .wrapper .rates .shape.opened {
+  display: block;
+}
+@media screen and (max-width: 768px) {
+  .card .top .content .wrapper .rates .shape {
+    top: 109px;
+    left: 12px;
+  }
+}
+.card .top .buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+@media screen and (max-width: 768px) {
+  .card .top .buttons {
+    justify-content: space-between;
+  }
+}
+.card .top .buttons button {
+  padding: 6px 45px;
+  background: #70706F;
+  color: white;
+  border: none;
+  font-size: 16px;
+  line-height: 24px;
+  max-width: 152px;
+}
+.card .top .buttons button:last-of-type {
+  background: #E7E7E7;
+  color: black;
+  margin-left: 11px;
+}
+@media screen and (max-width: 768px) {
+  .card .top .buttons button {
+    padding: 10px 0;
+    min-width: 114px;
+  }
+}
+.card .bottom {
+  padding-top: 29px;
+}
+.card .bottom .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .card .bottom .wrapper {
+    display: block;
+  }
+}
+.card .bottom .wrapper .category {
+  display: flex;
+  align-items: center;
+}
+.card .bottom .wrapper .category img {
+  margin-right: 11px;
+}
+.card .bottom .wrapper .category span {
+  font-size: 18px;
+  line-height: 30px;
+}
+.card .bottom .wrapper .category button {
+  background: rgba(0, 0, 0, 0);
+  border: 0;
+  border-bottom: 1px dashed #00AFD7;
+  padding: 0;
+  font-size: 16px;
+  line-height: 30px;
+}
+.card .bottom .wrapper .category.margin {
+  margin-right: 33px;
+}
+@media screen and (max-width: 768px) {
+  .card .bottom .wrapper .category {
+    display: block;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(161, 161, 161, 0.3);
+    margin-bottom: 22px;
+  }
+  .card .bottom .wrapper .category:last-of-type {
+    margin: 0;
+    border-bottom: none;
+  }
+  .card .bottom .wrapper .category.margin {
+    border-bottom: 1px solid rgba(161, 161, 161, 0.3);
+    margin-bottom: 22px;
+  }
+}
+.card .bottom .wrapper:first-of-type {
+  margin-bottom: 31px;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+}
