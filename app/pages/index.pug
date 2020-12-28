@@ -10,6 +10,8 @@ html(lang="ru")
         .top
           .content
             img.profile(src="./pics/profile.svg", alt="")
+            .counter
+              span 5
             .wrapper
               p Константинопольский К.
               .rates
@@ -44,23 +46,23 @@ html(lang="ru")
                         span 10.11.2019
                     p Было приятно поработать, все поставленные задачи были выполнены. Хорошая обратная связь. Если понадобится что-то снова сделать, обязательно обращусь к Николаю. Специалист своего дела, все на высоком уровне!
                 .shape
-          .buttons
-            button Выбрать
-            button Профиль
+              .buttons
+                button Выбрать
+                button.grey Профиль
         .bottom
           .wrapper
             .category
               img(src="./pics/location.svg", alt="")
               button Области
                 span  6
-            .category.margin
-              img(src="./pics/cup.svg", alt="")
-              span > 5 лет на сайте
-          .wrapper
             .category
               img(src="./pics/city.svg", alt="")
               button Города
                 span  16  
+          .wrapper
+            .category
+              img(src="./pics/cup.svg", alt="")
+              span > 5 лет на сайте
             .category
               img(src="./pics/doc.svg", alt="")
               button Имеется сертификат

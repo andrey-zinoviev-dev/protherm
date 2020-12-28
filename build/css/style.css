@@ -1,5 +1,5 @@
 .container {
-  max-width: 610px;
+  max-width: 678px;
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box;
@@ -11,7 +11,7 @@
 }
 
 .card {
-  padding: 44px 72px 50px 54px;
+  padding: 40px 50px 10px 50px;
   box-sizing: border-box;
   background: #FFFFFF;
   border: 1px solid #A1A1A1;
@@ -23,25 +23,39 @@
   }
 }
 .card .top {
-  padding-bottom: 26px;
+  padding-bottom: 30px;
   border-bottom: 1px solid rgba(161, 161, 161, 0.3);
   position: relative;
 }
 .card .top .content {
   display: flex;
-  align-items: flex-start;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .card .top .content {
+    align-items: flex-start;
+  }
 }
 .card .top .content .profile {
-  margin-right: 25px;
+  min-width: 142px;
 }
 @media screen and (max-width: 768px) {
   .card .top .content .profile {
-    max-width: 64px;
+    min-width: 64px;
+    max-height: 64px;
     margin: 0;
   }
 }
 .card .top .content .wrapper {
   width: 100%;
+  max-width: 359px;
+}
+@media screen and (max-width: 768px) {
+  .card .top .content .wrapper {
+    max-width: 163px;
+  }
 }
 .card .top .content .wrapper p {
   margin: 0 0 12px 0;
@@ -58,7 +72,7 @@
 .card .top .content .wrapper .rates {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   font-weight: 500;
   font-size: 18px;
   line-height: 24px;
@@ -71,7 +85,7 @@
   }
 }
 .card .top .content .wrapper .rates .rating {
-  min-width: 144px;
+  min-width: 147px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -83,6 +97,9 @@
 @media screen and (max-width: 768px) {
   .card .top .content .wrapper .rates .rating {
     max-width: 139px;
+  }
+  .card .top .content .wrapper .rates .rating span {
+    font-size: 12px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -109,6 +126,7 @@
   .card .top .content .wrapper .rates .popup {
     font-size: 12px;
     font-weight: 700;
+    margin: 0;
   }
 }
 .card .top .content .wrapper .rates button {
@@ -148,10 +166,10 @@
 }
 @media screen and (max-width: 768px) {
   .card .top .content .wrapper .rates .reviews {
-    min-width: 0;
+    min-width: 250px;
     max-width: 250px;
     top: 117px;
-    left: -37%;
+    left: -49%;
   }
 }
 .card .top .content .wrapper .rates .reviews .review .review_header {
@@ -225,14 +243,22 @@
     left: 12px;
   }
 }
+.card .top .content .likes {
+  margin-left: 30px;
+}
+@media screen and (max-width: 768px) {
+  .card .top .content .likes {
+    margin: 0 0 0 10px;
+    display: flex;
+    align-items: flex-end;
+  }
+}
+.card .top .content .popup {
+  margin-left: 50px;
+}
 .card .top .buttons {
   display: flex;
   justify-content: flex-end;
-}
-@media screen and (max-width: 768px) {
-  .card .top .buttons {
-    justify-content: space-between;
-  }
 }
 .card .top .buttons button {
   padding: 6px 45px;
@@ -241,21 +267,23 @@
   border: none;
   font-size: 16px;
   line-height: 24px;
-  max-width: 152px;
-}
-.card .top .buttons button:last-of-type {
-  background: #E7E7E7;
-  color: black;
-  margin-left: 11px;
+  min-width: 174px;
+  min-height: 44px;
 }
 @media screen and (max-width: 768px) {
   .card .top .buttons button {
     padding: 10px 0;
-    min-width: 104px;
+    min-width: 114px;
   }
 }
+.card .top .buttons .grey {
+  background: #E7E7E7;
+  color: black;
+  margin-left: 11px;
+}
 .card .bottom {
-  padding-top: 29px;
+  padding-top: 30px;
+  margin-bottom: 30px;
 }
 .card .bottom .wrapper {
   display: flex;
@@ -269,9 +297,10 @@
 .card .bottom .wrapper .category {
   display: flex;
   align-items: center;
+  min-width: 268.5px;
 }
 .card .bottom .wrapper .category img {
-  margin-right: 11px;
+  margin-right: 20px;
 }
 .card .bottom .wrapper .category span {
   font-size: 18px;
@@ -290,14 +319,14 @@
 }
 @media screen and (max-width: 768px) {
   .card .bottom .wrapper .category {
-    display: block;
+    align-items: flex-end;
     padding-bottom: 20px;
     border-bottom: 1px solid rgba(161, 161, 161, 0.3);
     margin-bottom: 22px;
+    min-width: 238px;
   }
   .card .bottom .wrapper .category:last-of-type {
     margin: 0;
-    border-bottom: none;
   }
   .card .bottom .wrapper .category.margin {
     border-bottom: 1px solid rgba(161, 161, 161, 0.3);
@@ -306,6 +335,31 @@
 }
 .card .bottom .wrapper:first-of-type {
   margin-bottom: 31px;
+}
+.card .counter {
+  min-width: 32px;
+  min-height: 32px;
+  border: 1px solid #D0D0D0;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 3px;
+  left: 97px;
+  background: #FFFFFF;
+}
+@media screen and (max-width: 768px) {
+  .card .counter {
+    min-width: 20px;
+    min-height: 20px;
+    top: 3px;
+    left: 41px;
+  }
+}
+
+body {
+  margin: 0;
 }
 
 button {

@@ -1,4 +1,7 @@
 @import "container", "popup.scss";
+body {
+  margin: 0;
+}
 button {
   cursor: pointer;
   outline: none;
